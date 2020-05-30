@@ -5,46 +5,50 @@
       color="#4c586a"
       dark
     >
-      <div class="d-flex align-center">
-        <v-icon>mdi-open-in-new</v-icon>
+         <div class="d-flex align-center goback-icon">
+          <v-icon class="set-icon">mdi-chevron-left</v-icon>
+        </div>
+
+      <div class="d-flex align-center title">
+        <span>更新公告</span>
       </div>
 
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
-
     <v-content>
       <HelloWorld/>
     </v-content>
     <v-bottom-navigation
             v-model="bottomNav"
             app
-            color="blue-grey"
+            dark
+            background-color="#4c586a"
+            width="100%"
+            grow
+            class="d-flex"
     >
-      <v-btn value="recent">
-        <span>Recent</span>
-        <v-icon>mdi-history</v-icon>
+      <v-btn value="home">
+        <span>首页</span>
+        <v-icon>mdi-home</v-icon>
       </v-btn>
 
       <v-btn value="favorites">
-        <span>Favorites</span>
-        <v-icon>mdi-heart</v-icon>
+        <span>我的矿机</span>
+        <v-icon>mdi-store</v-icon>
       </v-btn>
 
       <v-btn value="nearby">
-        <span>Nearby</span>
+        <span>我的团队</span>
+        <v-icon>mdi-cart</v-icon>
+      </v-btn>
+      <v-btn value="nearby">
+        <span>交易平台</span>
         <v-icon>mdi-map-marker</v-icon>
       </v-btn>
+      <v-btn value="nearby">
+        <span>会员中心</span>
+        <v-icon>mdi-account</v-icon>
+      </v-btn>
     </v-bottom-navigation>
-
   </v-app>
 </template>
 
@@ -53,11 +57,9 @@ import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
-
   components: {
     HelloWorld,
   },
-
   data: () => ({
       bottomNav: 'recent',
   }),
@@ -65,4 +67,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import "assets/styles/global";
+  .set-icon {
+    font-size: px2rem(90) !important;
+  }
+  .goback-icon {
+    position: absolute
+  }
+  .title {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
 </style>
