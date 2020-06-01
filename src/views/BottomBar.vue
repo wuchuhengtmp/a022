@@ -37,7 +37,10 @@
 
 <script>
 export default {
-    name: "BottomBar"
+    name: "BottomBar",
+    data: () => ({
+        bottomNav: 'recent'
+    }),
 }
 </script>
 
@@ -45,5 +48,8 @@ export default {
 @import "../assets/styles/global";
 .icon-wrapper {
     font-size: px2rem(50);
+}
+.navigation {
+    min-width: px2rem(50);
 }
 </style>
