@@ -1,5 +1,5 @@
-// 1rem = fontSize px
-// 1px = (1 / fontSize)rem
+//1rem = fontSize px
+//1px = (1 / fontSize)rem
 $fontSize: 37.5;
 @function px2rem($px) {
   @return ($px / $fontSize) + rem;
