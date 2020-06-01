@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?q41d48');
-  src:  url('fonts/icomoon.eot?q41d48#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?q41d48') format('truetype'),
-    url('fonts/icomoon.woff?q41d48') format('woff'),
-    url('fonts/icomoon.svg?q41d48#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?kylgfz');
+  src:  url('fonts/icomoon.eot?kylgfz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kylgfz') format('truetype'),
+    url('fonts/icomoon.woff?kylgfz') format('woff'),
+    url('fonts/icomoon.svg?kylgfz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,17 +26,26 @@
 }
 
 .icon-cart:before {
-  content: "\e900";
-}
-.icon-home:before {
-  content: "\e901";
-}
-.icon-location:before {
-  content: "\e902";
-}
-.icon-store:before {
   content: "\e903";
 }
-.icon-user:before {
+.icon-home:before {
   content: "\e904";
+}
+.icon-location:before {
+  content: "\e905";
+}
+.icon-store:before {
+  content: "\e906";
+}
+.icon-user:before {
+  content: "\e907";
+}
+.icon-id-card:before {
+  content: "\e900";
+}
+.icon-lock:before {
+  content: "\e901";
+}
+.icon-open_eyes:before {
+  content: "\e902";
 }

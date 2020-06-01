@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Notice from "../views/Notice";
-import Login from "../views/Login";
+import Login from "../views/Login/index";
 import Layout from "../views/Layout";
 
 Vue.use(Router)
